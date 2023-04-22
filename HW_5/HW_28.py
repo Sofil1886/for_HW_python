@@ -4,9 +4,9 @@ b = int(input('Введите целое неотрицательное числ
 
 def calculate_sum(a, b):
     if b == 0:
-        return 1
+        return a
     else:
-        return a + calculate_sum(a/a, b - 1)
+        return calculate_sum(a + 1, b - 1)
 
 if a < 0 or b < 0:
     print('Введите неотрицательное число')
