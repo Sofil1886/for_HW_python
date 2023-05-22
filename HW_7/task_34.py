@@ -5,9 +5,8 @@ lett_list = []
 
 
 for each in input_text.split():
-    filtered = filter(lambda x: x in check_letters, each)
-    let_amount = len(list(map(lambda x: x, filtered)))
-    lett_list.append(let_amount)
+    filtered = len(list(filter(lambda x: x in check_letters, each)))
+    lett_list.append(filtered)
 
 result = list(map(lambda x: x == lett_list[0], lett_list))
 
