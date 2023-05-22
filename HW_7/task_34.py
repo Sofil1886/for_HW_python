@@ -1,5 +1,5 @@
 input_text = input("Write your song sounds: ")
-check_letters = list('аеёиоуыэюя')
+check_letters = 'аеёиоуыэюя'
 lett_list = []
 # input_text.split(" ")
 
