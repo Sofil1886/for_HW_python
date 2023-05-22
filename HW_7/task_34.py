@@ -4,7 +4,7 @@ lett_list = []
 # input_text.split(" ")
 
 
-for each in input_text.split(" "):
+for each in input_text.split():
     filtered = filter(lambda x: x in check_letters, each)
     let_amount = len(list(map(lambda x: x, filtered)))
     lett_list.append(let_amount)
